@@ -23,7 +23,29 @@
             @layer components {
               .container{
                  margin: 0 auto;
+                 padding: 0 10px;
                  border: 1px solid red;
+              }
+              .section-h1{
+                @apply text-5xl font-semibold text-white !leading-tight;
+              }
+              .section-h2{
+                @apply text-5xl font-semibold text-black !leading-tight;
+              }
+              .section-h3{
+                @apply text-2xl font-semibold text-[#18191F] !leading-tight;
+              }
+              .section-h5{
+                @apply text-xl font-semibold text-white;
+              }
+              .section-h6{
+                 @apply  text-xs font-semibold text-[#23A6F0];
+              }
+              .section-p{
+                @apply text-base font-light text-[#E0E0E0] !leading-normal;
+              }
+              .section-span{
+                @apply text-primary;
               }
             }
      </style>
@@ -51,10 +73,10 @@
                     <ul
                     tabindex="0"
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow space-y-5">
-                    <li><a href="#" class="text-white">Home</a></li>
-                    <li><a href="#" class="text-white">Shop</a></li>
-                    <li><a href="#" class="text-white">News</a></li>
-                    <li><a href="#" class="text-white">Contact</a></li>
+                    <li><a href="#" class="lg:text-white">Home</a></li>
+                    <li><a href="#" class="lg:text-white">Shop</a></li>
+                    <li><a href="#" class="lg:text-white">News</a></li>
+                    <li><a href="#" class="lg:text-white">Contact</a></li>
                     <button class="btn bg-primary hover:bg-primary text-white">Login</button>
                    </ul>
                   </div>
@@ -70,9 +92,87 @@
                   <button class="btn bg-primary border-none hover:bg-primary  text-white">Login</button>
                 </div>
               </div>
+              <div class="carousel w-full py-14">
+                <div id="slide1" class="carousel-item relative w-full">
+                   <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
+                    <!-- carousel text -->
+                     <div class="space-y-3">
+                        <span class="section-p">Computer-controlled digital transistorized with electronic advance</span>
+                        <h1 class="section-h1">Honda CBR 300R</h1>
+                        <p class="section-p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <button class="btn bg-primary hover:bg-primary border-none text-white">Purchase</button>
+                     </div>
+                     <!-- carousel image -->
+                     <div class="flex justify-center items-center">
+                        <img src="assets/slider/bike1.png" alt="">
+                     </div>
+                   </div>
+                  <div class="absolute bottom-[-6%] md:bottom-[-10%] right-[1%] flex gap-2">
+                    <a href="#slide3" class="flex justify-center items-center w-8 h-8 ring-1 ring-sky-400 rounded-full text-white">❮</a>
+                    <a href="#slide2" class="flex justify-center items-center w-8 h-8 ring-1 ring-sky-400 rounded-full text-white">❯</a>
+                  </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full">
+                   <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
+                    <!-- carousel text -->
+                     <div class="space-y-3">
+                        <span class="section-p">Computer-controlled digital transistorized with electronic advance</span>
+                        <h1 class="section-h1">Honda CBR 300R</h1>
+                        <p class="section-p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <button class="btn bg-primary hover:bg-primary border-none text-white">Purchase</button>
+                     </div>
+                     <!-- carousel image -->
+                     <div class="flex justify-center items-center">
+                        <img src="assets/slider/bike2.png" alt="">
+                     </div>
+                   </div>
+                   <div class="absolute bottom-[-6%] md:bottom-[-10%] right-[1%] flex gap-2">
+                    <a href="#slide4" class="flex justify-center items-center w-8 h-8 ring-1 ring-sky-400 rounded-full text-white">❮</a>
+                    <a href="#slide3" class="flex justify-center items-center w-8 h-8 ring-1 ring-sky-400 rounded-full text-white">❯</a>
+                  </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full">
+                   <div class="grid grid-cols1 md:grid-cols-2 justify-center items-center">
+                    <!-- carousel text -->
+                     <div class="space-y-3">
+                        <span class="section-p">Computer-controlled digital transistorized with electronic advance</span>
+                        <h1 class="section-h1">Honda CBR 300R</h1>
+                        <p class="section-p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <button class="btn bg-primary hover:bg-primary border-none text-white">Purchase</button>
+                     </div>
+                     <!-- carousel image -->
+                     <div class="flex justify-center items-center">
+                        <img src="assets/slider/bike3.png" alt="">
+                     </div>
+                   </div>
+                   <div class="absolute bottom-[-6%] md:bottom-[-10%] right-[1%] flex gap-2">
+                    <a href="#slide1" class="flex justify-center items-center w-8 h-8 ring-1 ring-sky-400 rounded-full text-white">❮</a>
+                    <a href="#slide4" class="flex justify-center items-center w-8 h-8 ring-1 ring-sky-400 rounded-full text-white">❯</a>
+                  </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full">
+                   <div class="grid grid-cols-1 md:grid-cols-2 justify-center items-center">
+                    <!-- carousel text -->
+                     <div class="space-y-3">
+                        <span class="section-p">Computer-controlled digital transistorized with electronic advance</span>
+                        <h1 class="section-h1">Honda CBR 300R</h1>
+                        <p class="section-p">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                        <button class="btn bg-primary hover:bg-primary border-none text-white">Purchase</button>
+                     </div>
+                     <!-- carousel image -->
+                     <div class="flex justify-center items-center">
+                        <img src="assets/slider/bike4.png" alt="">
+                     </div>
+                   </div>
+                   <div class="absolute bottom-[-6%] md:bottom-[-10%] right-[1%] flex gap-2">
+                    <a href="#slide2" class="flex justify-center items-center w-8 h-8 ring-1 ring-sky-400 rounded-full text-white">❮</a>
+                    <a href="#slide1" class="flex justify-center items-center w-8 h-8 ring-1 ring-sky-400 rounded-full text-white">❯</a>
+                  </div>
+                </div>
+              </div>
         </div>
     </header>
-    <main></main>
+    <main class="container"></main>
     <footer></footer>
 </body>
 </html>
