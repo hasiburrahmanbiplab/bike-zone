@@ -30,7 +30,7 @@
                 @apply text-5xl font-semibold text-white !leading-tight;
               }
               .section-h2{
-                @apply text-5xl font-semibold text-black !leading-tight;
+                @apply  font-semibold text-black !leading-tight;
               }
               .section-h3{
                 @apply text-2xl font-semibold text-[#18191F] !leading-tight;
@@ -172,7 +172,28 @@
               </div>
         </div>
     </header>
-    <main class="container"></main>
+    <!-- featured section start -->
+     <section class="bg-white my-14">
+        <div class="container">
+            <div class="featued-container space-y-14">
+                <div class="featured-heading text-center">
+                    <h2 class="section-h2 text-4xl lg:text-5xl">Fetured Bikes In This Year</h2>
+                    <span class="text-xs text-red-500 font-bold">Best bike collection</span>
+                </div>
+                <div class="featured-image grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center gap-12 lg:gap-8">
+                    <div class="image bg-gray-300">
+                        <img src="assets/others/feature-bike.png" class="grayscale" alt="">
+                    </div>
+                    <div class="image bg-gray-300">
+                        <img src="assets/others/feature-bike.png" alt="">
+                    </div>
+                    <div class="image bg-gray-300">
+                        <img src="assets/others/feature-bike.png" class="grayscale" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
     <footer></footer>
 </body>
 </html>
