@@ -30,7 +30,7 @@
                 @apply text-5xl font-semibold text-white !leading-tight;
               }
               .section-h2{
-                @apply  font-semibold text-black !leading-tight;
+                @apply  text-4xl font-semibold text-black !leading-tight;
               }
               .section-h3{
                 @apply text-2xl font-semibold text-[#18191F] !leading-tight;
@@ -177,7 +177,7 @@
         <div class="container">
             <div class="featued-container space-y-14">
                 <div class="featured-heading text-center">
-                    <h2 class="section-h2 text-4xl">Fetured Bikes In This Year</h2>
+                    <h2 class="section-h2">Fetured Bikes In This Year</h2>
                     <span class="text-xs text-red-500 font-bold">Best bike collection</span>
                 </div>
                 <div class="featured-image grid grid-cols-1 lg:grid-cols-3 justify-items-center items-center gap-12 lg:gap-8">
@@ -200,10 +200,10 @@
         <div class="container">
             <div class="latest-container space-y-14">
                 <div class="latest-heading text-center">
-                    <h2 class="section-h2 text-4xl">latest News</h2>
+                    <h2 class="section-h2">latest News</h2>
                 </div>
-                <div class="latest-card grid md:grid-cols-2 lg:grid-cols-3  gap-5">
-                <div class="card bg-base-100  space-y-4 p-3">
+                <div class="latest-card grid grid-cols-1 lg:grid-cols-3  gap-5">
+                <div class="card bg-base-100  space-y-4 p-3 max-w-[450px] mx-auto lg:max-w-full">
                     <figure>
                         <img src="assets/others/latest1.png" class="w-full" alt="">
                     </figure>
@@ -215,7 +215,7 @@
                         </div>
                     </div>
                     </div>
-                <div class="card bg-base-100 space-y-4 p-3">
+                <div class="card bg-base-100 space-y-4 p-3 max-w-[450px] mx-auto lg:max-w-full">
                     <figure>
                         <img src="assets/others/latest2.png" class="w-full" alt="">
                     </figure>
@@ -227,7 +227,7 @@
                         </div>
                     </div>
                     </div>
-                <div class="card bg-base-100 space-y-4 p-3 ">
+                <div class="card bg-base-100 space-y-4 p-3  max-w-[450px] mx-auto lg:max-w-full">
                     <figure>
                         <img src="assets/others/latest3.png" class="w-full" alt="">
                     </figure>
@@ -244,6 +244,85 @@
         </div>
      </section>
     <!-- latest section end -->
+    <!-- client section start -->
+     <section class="my-14">
+        <div class="container">
+            <div class="client-container space-y-14">
+                <div class="client-heading text-center">
+                    <h2 class="section-h2">Happy <span class="section-span">Clients says</span></h2>
+                </div>
+                <div class="client-card grid grid-cols-1 lg:grid-cols-3 gap-8">
+                  <div class="card bg-base-100 shadow-xl max-w-[450px] mx-auto lg:max-w-full">
+                    <div class="avatar">
+                      <div class="w-24 rounded-full mx-auto">
+                         <img src="assets/others/user-1.png" class="max-w-full" alt="">
+                      </div>
+                    </div>
+                    <div class="card-body items-center text-center space-y-1 p-3 mt-1">
+                      <p class="section-p text-[#6C6C6C]">Slate helps you see how 
+                        many more days you need 
+                        to work to reach your financial 
+                        goal for the month and year.</p>
+                        <div class="rating rating-sm">
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-200" checked="checked" />
+                        </div>
+                        <h6 class="section-h6">Regina Miles</h6>
+                        <span class="text-xs font-semibold">Banker</span>
+                    </div>
+                  </div>
+                  <div class="card bg-base-100 shadow-xl max-w-[450px] mx-auto lg:max-w-full">
+                    <div class="avatar">
+                      <div class="w-24 rounded-full mx-auto">
+                         <img src="assets/others/user-2.png" class="max-w-full" alt="">
+                      </div>
+                    </div>
+                    <div class="card-body items-center text-center space-y-1 p-3 mt-1">
+                      <p class="section-p text-[#6C6C6C]">Slate helps you see how 
+                        many more days you need 
+                        to work to reach your financial 
+                        goal for the month and year.</p>
+                        <div class="rating rating-sm">
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-200" checked="checked" />
+                        </div>
+                        <h6 class="section-h6">Regina Miles</h6>
+                        <span class="text-xs font-semibold">Banker</span>
+                    </div>
+                  </div>
+                  <div class="card bg-base-100 shadow-xl max-w-[450px] mx-auto lg:max-w-full">
+                    <div class="avatar">
+                      <div class="w-24 rounded-full mx-auto">
+                         <img src="assets/others/user-3.png" class="max-w-full" alt="">
+                      </div>
+                    </div>
+                    <div class="card-body items-center text-center space-y-1 p-3 mt-1">
+                      <p class="section-p text-[#6C6C6C]">Slate helps you see how 
+                        many more days you need 
+                        to work to reach your financial 
+                        goal for the month and year.</p>
+                        <div class="rating rating-sm">
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-400" checked="checked" />
+                          <input type="radio" name="rating-6" class="mask mask-star-2 bg-orange-200" checked="checked" />
+                        </div>
+                        <h6 class="section-h6">Regina Miles</h6>
+                        <span class="text-xs font-semibold">Banker</span>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- client section end -->
     <footer></footer>
 </body>
 </html>
